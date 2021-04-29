@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivDetail"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hospitalplaylist"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ivDetail">
+
+        <TextView
+            android:id="@+id/tvDetailName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Secretary Kim"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/tvDetailSum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="bercerita tentang seorang siswi bernama Eun Dan-oh (Kim Hye-yoon) yang bersekolah di sebuah akademi bergengsi. Suatu hari, ia mengetahui bahwa dia dan semua orang di sekolahnya sebenarnya adalah karakter dalam manhwa yang berjudul Secret (비밀, RR: bimil). Ia memiliki kondisi jantung yang semakin memburuk, Dan-oh adalah karakter pendukung yang ditakdirkan segera meninggal dalam cerita ini."
+            android:textSize="18dp"
+            android:layout_margin="15dp"
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
